@@ -1,10 +1,10 @@
 services:
-  mytodo:
+  onepiece:
     build:
       context: .
       target: dev
       dockerfile: Dockerfile
-    image: mytodo:dev
+    image: onepiece:dev
     container_name: onepiece
     volumes:
       - ./:/app

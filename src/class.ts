@@ -1,3 +1,13 @@
+type Crew = {
+    id: number
+    name: string
+    status: string
+    number: number
+    roman_name: string
+    total_prime: number
+    is_yonko: boolean
+}
+
 export type CharacterInfo = {
     id: number
     name: string
@@ -8,16 +18,7 @@ export type CharacterInfo = {
     bounty: string
     status: string
     description: string
-    crew: {
-        id: number
-        name: string
-        description: string
-        status: string
-        number: string
-        roman_name: string
-        total_prime: string
-        is_yonko: string
-    },
+    crew: Crew
     fruit: {
         id: number
         name: string
@@ -39,16 +40,7 @@ export class Character {
     bounty: string
     status: string
     description: string
-    crew: {
-        id: number
-        name: string
-        description: string
-        status: string
-        number: string
-        roman_name: string
-        total_prime: string
-        is_yonko: string
-    }
+    crew: Crew
     fruit: {
         id: number
         name: string
